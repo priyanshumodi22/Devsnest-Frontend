@@ -1,0 +1,36 @@
+.circle{
+  position: absolute;
+  top: 50px;
+  left: 450px;
+  transform: traslate(50px,-50px);
+  width:300px;
+    height:300px;
+  border: 20px solid red;
+  border-radius: 500px;
+  
+}
+.hour{
+ background color: ;:black;
+    height:120px;
+    border-right:2px solid black;
+    margin-top:30px;
+    margin-right:147px;
+  
+}
+.min{
+  background color:black;
+  height:2px;
+  width:150px;
+  border-right:120px solid black;
+  margin-top:0px;
+  margin-right:170px;
+}
+.sec{
+  background color: black;
+  height:90px;
+    border-right:2px solid black;
+    margin-top:-68px;
+    margin-right:155px;
+   margin-left:-29px;
+   transform: rotate(40deg);
+}
