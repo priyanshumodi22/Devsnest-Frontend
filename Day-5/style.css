@@ -1,6 +1,7 @@
-/* common styles */
+
 * {
   padding: 0;
+  /* position: relative; */
   margin: 0;
 }
 
@@ -9,31 +10,30 @@ body {
   height: 100vh;
   overflow: hidden;
   display: flex;
+  position: absolute;
   justify-content: center;
   align-items: center;
   background-color: #222831;
   font-family: sans-serif;
 }
 
-/* common styles end */
 
-/* calculator */
 .calculator {
   width: 300px;
   padding-bottom: 15px;
+  position: absolute;
   border-radius: 7px;
   background-color: #000;
   box-shadow: 5px 8px 8px -2px rgba(0, 0, 0, 0.61);
 }
-/* calculator style end */
 
-/* display */
 .display {
   width: 100%;
   height: 80px;
   border: none;
   box-sizing: border-box;
   padding: 10px;
+  position: absolute;
   font-size: 2rem;
   background-color: #2ddb5b;
   color: #000;
@@ -42,16 +42,13 @@ body {
   border-top-right-radius: 7px;
 }
 
-/* display style end */
 
-/* row */
 .row {
   display: flex;
+  position: absolute;
   justify-content: space-between;
 }
-/* row style end */
 
-/* button */
 button {
   width: 50px;
   height: 50px;
@@ -68,12 +65,9 @@ button:hover {
   cursor: pointer;
 }
 
-/* button style end */
 
-/* operator */
 .operator {
   background-color: #00ff44;
+  position: absolute;
   color: #000;
 }
-
-/* operator style end */
