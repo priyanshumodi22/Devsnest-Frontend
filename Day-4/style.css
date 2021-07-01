@@ -10,7 +10,9 @@ body
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #68a4ff;
+  /* background: #68a4ff; */
+  background: rgb(10,7,60);
+  background-image: linear-gradient(to right top, #633be7, #5a57ed, #596df0, #5f80f0, #6c92ee, #63a2f4, #62b1f7, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
 .clock
 {
@@ -19,13 +21,14 @@ body
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff url(./clock.png);
+  background: #ffffff00 url(./clock.png);
+  
   background-size: cover;
   border-radius: 50%;
-  border: 20px solid #fff;
+  border: 20px solid #ffffff00;
   box-shadow: inset 0 0 30px rgba(0,0,0,.1),
                      0 20px 20px rgba(0,0,0,.2), 
-                     0 0 0 4px rgba(255,255,255,1);
+                     0 0 0 4px #ffffff00;
 }
 .clock::before
 {
@@ -34,7 +37,7 @@ body
   width: 15px;
   height: 15px;
   background: #848484;
-  border: 2px solid #fff;
+  border: 0px solid #ffffff00;
   z-index: 100000;
   border-radius: 50%;
 }
