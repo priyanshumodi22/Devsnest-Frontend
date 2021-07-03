@@ -1,56 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="../Day-5/calc.css">
 </head>
 <body>
-
-  <!-- calculator -->
-  <div class="calculator">
-
-    <!-- display -->
-    <input type="text" class="display" disabled>
-    <!-- keys -->
-    <div class="keys">
-      <!-- 4 rows of keys -->
-      <div class="row">
-        <button value="7">7</button>
-        <button value="8">8</button>
-        <button value="9">9</button>
-        <button value="+" class="operator">+</button>
-      </div>
-      <div class="row">
-        <button value="4">4</button>
-        <button value="5">5</button>
-        <button value="6">6</button>
-        <button value="-" class="operator">-</button>
-      </div>
-      <div class="row">
-        <button value="1">1</button>
-        <button value="2">2</button>
-        <button value="3">3</button>
-        <button value="*" class="operator">*</button>
-      </div>
-      <div class="row">
-        <button value="C" class="operator">C</button>
-        <button value="0">0</button>
-        <button value="/" class="operator">/</button>
-        <button value="=" class="operator">=</button>
-      </div>
+  <div class="container">
+    <form class="calculator" name="calc">
+      <input type="text" readonly class="value" name="txt"/>
+      <span class="num clear" onclick="calc.txt.value = '' ">c</span>
+      <!-- <span class="num" onclick="calc.txt.value = '' "> </span> -->
+      <span class="num" onclick="document.calc.txt.value +='/'">/</span>
+      <span class="num" onclick="document.calc.txt.value +='*'">*</span>
+      <span class="num" onclick="document.calc.txt.value +='7'">7</span>
+      <span class="num" onclick="document.calc.txt.value +='8'">8</span>
+      <span class="num" onclick="document.calc.txt.value +='9'">9</span>
+      <span class="num" onclick="document.calc.txt.value +='-'">-</span>
+      <span class="num" onclick="document.calc.txt.value +='4'">4</span>
+      <span class="num" onclick="document.calc.txt.value +='5'">5</span>
+      <span class="num" onclick="document.calc.txt.value +='6'">6</span>
+      <span class="num plus" onclick="document.calc.txt.value +='+'">+</span>
+      <span class="num" onclick="document.calc.txt.value +='1'">1</span>
+      <span class="num" onclick="document.calc.txt.value +='2'">2</span>
+      <span class="num" onclick="document.calc.txt.value +='3'">3</span>
+      <span class="num" onclick="document.calc.txt.value +='0'">0</span>
+      <span class="num" onclick="document.calc.txt.value +='00'">00</span>
+      <span class="num" onclick="document.calc.txt.value +='.'">.</span>
+      <span class="num equal" onclick="document.calc.txt.value =eval(calc.txt.value)">=</span>
+    </form>
     </div>
-    <div>
-      <p>
-        <ul>
-          <a href="../index.html">Homepage</a>
-      </ul>
-      </p>
-    </div>
-  </div>
-  <!-- calculator body ends -->
-  
-  <script type="text/javascript" src="../Day-5/calc.js"></script>
+  <!-- <script type="text/javascript" src="../Day-5/calc.js"></script> -->
 </body>
 </html>
