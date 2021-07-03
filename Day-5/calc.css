@@ -87,7 +87,7 @@ body::after
 {
   grid-column: span 4;
   height: 140px;
-  width:300px;
+  width:330px;
   text-align: right;
   border: none;
   outline: none;
