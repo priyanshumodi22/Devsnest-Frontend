@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cont {
+  display: flex;
+  justify-content: space-between;
+  width: 84vw;
+  top: 0;
+  margin-top: 8px;
+  /* background-color: rgb(16, 52, 65); */
+  background: #DB65B0;
+background: -webkit-linear-gradient(top right, #DB65B0, #5D9DCC);
+background: -moz-linear-gradient(top right, #DB65B0, #5D9DCC);
+background: linear-gradient(to bottom left, #DB65B0, #5D9DCC);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 1.3em;
+}
+
+input {
+  height: 25px;
+  border-radius: 20px;
+  outline: none;
+  padding: 0px 4px;
+  border: none;
+}
+
+button {
+  border-radius: 20px;
+  color: white;
+  /* background-color: rgb(186, 197, 90); */
+  background: #C3EFED;
+background: -webkit-linear-gradient(bottom right, #C3EFED, #04A7EE);
+background: -moz-linear-gradient(bottom right, #cfe2e19d, #04A7EE);
+background: linear-gradient(to top left, #c3efed75, #0755ff);
+  padding: 4px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+article {
+  margin-top: 15px;
+  width: 80vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.dogs {
+  padding: 5px;
+}
+
+.dogs:hover {
+  /* border: dashed 5px #39ffce; */
+  padding: 2px;
+  border-radius: 10px;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
+
+.notFound {
+  color: #fff;
+  /* border: 2px rgb(10, 90, 66) solid; */
+  padding: 8px;
+  border-radius: 20px;
+  /* background-color: rgb(10, 163, 92); */
+  background: #04C4F2;
+background: -webkit-linear-gradient(top left, #04C4F2, #F37689);
+background: -moz-linear-gradient(top left, #04C4F2, #732cad);
+background: linear-gradient(to bottom right, #04C4F2, #732cad);
+  margin: auto;
+  height: 80px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+}
+.notFound:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.3s all;
+}
